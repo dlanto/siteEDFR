@@ -24,7 +24,6 @@ $telephone->setAttribute('class', 'form-control');
 $telephone->setAttribute('placeholder', 'Telephone de l\'utilisateur');
 
 $motdepasse = $form->get('motdepasse');
-$motdepasse->setAttribute('type', 'email');
 $motdepasse->setAttribute('class', 'form-control');
 $motdepasse->setAttribute('placeholder', 'Mot de passe de l\'utilisateur');
 // This provides CSS classes for the submit button:
@@ -64,18 +63,12 @@ echo $this->form()->openTag($form);
     <?= $this->formElementErrors()->render($telephone, ['class' => 'help-block']) ?>
 </div>
 
-<?php /*<div class="form-group">
+<div class="form-group">
     <?= $this->formLabel($motdepasse) ?>
     <?= $this->formElement($motdepasse) ?>
     <?= $this->formElementErrors()->render($motdepasse, ['class' => 'help-block']) ?>
 </div>
-*/?>
-
-<div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-</div>
-
+      
 <?php
 echo $this->formSubmit($submit);
 echo $this->formHidden($form->get('id'));
