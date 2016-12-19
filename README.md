@@ -26,6 +26,9 @@ toutes les commandes pour installer des packages se trouvent sur : https://zendf
 - Dans le dossier du site, remplacez les repertoires : 
 config, module et public par ceux présent sur ce github.  
 
+- Faites de même pour le fichier composer.json et toujours dans le repertoire du site lancer la commande :
+composer dump-autoload
+
 - modifiez le nom de la base de données et le nom d'hôte dans le fichier : config/autoload/global.php pour qu'ils correspondent à votre configuration.
 
 #Utilisation :
