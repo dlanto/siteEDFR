@@ -110,9 +110,9 @@ class AlbumController extends AbstractActionController
 
         $request = $this->getRequest();
         if ($request->isPost()) {
-            $del = $request->getPost('del', 'No');
+            $del = $request->getPost('del', 'Non');
 
-            if ($del == 'Yes') {
+            if ($del == 'Oui') {
                 $id = (int) $request->getPost('id');
                 $this->table->deleteAlbum($id);
             }
