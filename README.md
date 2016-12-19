@@ -21,6 +21,8 @@ Zend\Validator,
 - exemple d'une commande pour installer un package :
 composer require zendframework/zend-db
 
+toutes les commandes pour installer des packages se trouvent sur : https://zendframework.com/learn
+
 - Dans le dossier du site, remplacez les repertoires : 
 config, module et public par ceux présent sur ce github.  
 
