@@ -5,7 +5,7 @@
 
 #Installation :
 - A l'aide de mySQL, importez la base de données à l'aide du fichier bdd.sql. L'utilisateur par défaut est "root" mais peut être modifié dans le fichier conf.php.
-- Dans la console windows, placer vous dans le repertoire de votre serveur web puis rentrez la commande suivante (nécessite composer):
+- Dans la console windows, placer vous dans le repertoire de votre serveur web puis rentrez la commande suivante (nécessite composer et git):
 composer create-project -s dev zendframework/skeleton-application path/to/install
 
 - il est nécessaire d'installer les packages :
